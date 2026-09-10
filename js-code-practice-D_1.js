@@ -142,10 +142,16 @@ console.log("getFibonacciSequence. ==>>", getFibonacciSequence(8));
 function myDebounce(func, delay) {
     let timerID;
     return function (...args) {
+        console.log("typeOf ==>>", Array.isArray(args));
+
         clearTimeout(timerID);
-        timerID = setTimeout(() => {
-            func.apply(this, ...args);
-        }, delay || 500);
+        // setTimeout(greet.bind(null, "Hardik", "Hello"), 2000); // as per this example can I do below thing
+        timerID = setTimeout(func.bind(this, args), delay ?? 500);
+        // timerID = setTimeout(() => {
+        //     // func.apply(this, args);// takes second argument as single param and calls the function immidaitly.
+        //     // func.call(this, args);// takes second argument as array and calls the function immidaitly.
+        //     // func.bind(this, args)(); // takes second argument as array and returns a new function with this binding.
+        // }, delay || 500);
     };
 };
 
@@ -156,4 +162,13 @@ const myHandleSearch = myDebounce((args) => {
 myHandleSearch("a");
 myHandleSearch("aa");
 myHandleSearch("aaa");
-myHandleSearch("aaaa");
+myHandleSearch("aaaa", "bb", "ccc");
+
+
+const num = [3, 4, 5, 6, 24];
+
+console.log("Math.max(num) =>>", Math.max.apply(null, num));
+console.log("Math.max(num) =>>", Math.min(...num));
+
+
+
