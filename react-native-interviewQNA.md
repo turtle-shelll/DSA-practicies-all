@@ -598,3 +598,84 @@ A type that can be one of several types: `let id: string | number;` — must be 
 - For system/security questions, structure your answer as: **problem it solves → how it works → a library/example you'd use**.
 - For coding questions, think out loud, clarify edge cases first (empty array, null input), then code.
 - Practice your 2-minute project walkthrough out loud at least 3 times before the interview.
+
+
+
+
+
+
+
+
+************************************************************************************
+************************************************************************************
+************************************************************************************
+
+<!-- console.log("Hello, World!");
+
+const ramArr = ["eat", "tea", "tan", "ate", "nat", "bat"];
+
+
+function createAnnagrams(arr){
+    const myAnnagram = {};
+
+    for(let i = 0; i < arr.length; i++){
+        const unique = arr[i].split("").sort().join("");
+        // console.log("unique ==>>>",unique);
+        if(myAnnagram[unique]){
+            myAnnagram[unique].push(arr[i]);
+        }else{
+            myAnnagram[unique] = [];
+            myAnnagram[unique].push(arr[i]);
+        }
+    }
+    console.log("myAnnagram =>",myAnnagram);
+};
+
+
+createAnnagrams(ramArr); -->
+
+
+
+************************************************************************************
+************************************************************************************
+************************************************************************************
+
+
+
+<!-- 
+What was your role in project 
+What is RTK query and what are slices
+How would you manage Webview connection with native views
+How would you handle difference in development in android and iOS
+How would you optimise the build and how would you fast process the pipeline of deployment
+How would you optimise the application 
+How would you handle version change and make sure the previous build works fine after you have released new build to play store -->
+
+
+<!-- 
+What are the deployment steps?
+What is your usual release pipeline from development to deployment?
+How would you execute code only in the Pilot environment?
+What is the difference between Live and Pilot environments?
+Have you faced any performance-related issue and solved it?
+Have you implemented caching for APIs?
+Have you worked with WebView?
+How does postMessage and onMessage work?
+How would you open a specific WebView page from a native screen?
+Have you implemented custom native modules?
+Give one use case where you would need a custom native module.
+How would you redirect users from a website to the app only if the app is installed?
+Give an example of an Android URL that can open the app.
+What about URLs that don’t use HTTPS?
+Can we still use custom URL schemes? -->
+
+
+
+<!-- 
+tell about your self,
+what was your role in each project,
+have you used Webview in your project,
+in which functionality you have used webview.
+have you worked with any analytics.
+have you used any third party SDK and which one.
+have you worked with optimization and explanation of them. -->
